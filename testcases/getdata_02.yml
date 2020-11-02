@@ -1,0 +1,14 @@
+# 模拟最基础的get请求
+- congfig:
+     name: 验证能否打开湖南新梦想主页
+     base_url: http://www.hnxmxit.com
+
+- test:
+     name: 接口名称 湖南新梦想主页接口
+     request:
+       url: /
+       method: GET
+    extract：# 提取到变量存储
+       title: <title>(.+?)_<> # 利用正则获取部分响应中文
+     validate:
+       - eq: [$title,'新梦想....'] # 可能会乱码

@@ -1,0 +1,14 @@
+# 模拟最基础的get请求
+- congfig:
+     name: 验证百度搜索
+     base_url: http://www.baidu.com
+
+- test:
+     name: 调用百度搜索接口
+     request:
+       url: /s
+       method: GET
+       parmas:
+         wd: newdream
+     validata:
+       - eq: ["status_coded",200]

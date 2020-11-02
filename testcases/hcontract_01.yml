@@ -1,0 +1,5 @@
+# 关联 上一个接口的返回值（截取的部分值）作为下一个接口的参数
+- config:用例
+    name: 标签查询
+    base_url: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
+- test:

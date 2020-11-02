@@ -28,7 +28,7 @@ class Admin:
     def create_schoool(self, name, addr):
         school_dict = {}
         school_dict.setdefault(name, addr)
-        print(1)
+        print(123)
 
     def create_school_course(self, name):
         school_course_list = []
